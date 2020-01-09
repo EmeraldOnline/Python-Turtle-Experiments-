@@ -1,8 +1,6 @@
 import turtle
 
-t = turtle.Pen()
-t.speed(1000)
-turtle.tracer(0)
+turtle.speed(1000)
 speed = int(turtle.numinput("Speed of drawing","How fast would you like the program to draw the spirals? Smaller is faster, can only be an integer."))
 maxtimes = 360*speed
 
