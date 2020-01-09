@@ -8,27 +8,23 @@ maxtimes = 360*speed
 
 
 while True:
-    for i in range(0,maxtimes):
+    for i in range(maxtimes):
         angle = i/speed
-        print(angle)
         repeat = int(angle)
-        turtle.clear()
         for i in range(0,repeat):
             turtle.forward(i*2)
             turtle.right(angle)
         turtle.tracer(0)
         turtle.tracer(1)
-        turtle.tracer(0)
+        turtle.tracer(0) #Needed as a slight delay
         turtle.reset()
-    for i in range(0,maxtimes):
+    for i in range(maxtimes):
         angle = 360-(i/speed)
-        print(angle)
         repeat = int(angle*1.5)
-        turtle.clear()
         for i in range(0,repeat):
             turtle.forward(i*2)
             turtle.right(angle)
         turtle.tracer(0)
         turtle.tracer(1)
-        turtle.tracer(0)
+        turtle.tracer(0) #Needed as a slight delay
         turtle.reset()
